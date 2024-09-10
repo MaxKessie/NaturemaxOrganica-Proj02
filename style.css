@@ -208,51 +208,89 @@
   row-gap: 10px;
 }
 
+/* Footer Styles */
 footer {
-  background-color: #181717;
-  color: #ffffff;
-  padding: 1x 20px;
-  text-align: center;
+  width: 100%;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
+/* Top Footer */
 .footer-top {
-  background-color: #457902;
-  color: #ffffff;
-  padding: 40px 20px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #013220; /* Black-green color */
+  padding: 40px;
+  gap: 20px;
 }
 
-.footer-top h2 {
-  font-size: 2em;
-  border-bottom: 20px;
+.footer-top h3 {
+  margin-bottom: 15px;
 }
 
-.footer-buttom {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 20px;
+.footer-top p,
+.footer-top ul {
+  margin: 0;
 }
 
-.column {
-  flex: 1;
-  margin: 10px;
-  max-width: 250px;
-}
-
-.column h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  color: #1c7904;
-}
-
-.column p {
+.about-us p {
+  margin-top: 10px;
   font-size: 0.9em;
-  line-height: 1;
+  line-height: 1.6;
+}
+
+.features ul,
+.follow-us ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features li,
+.follow-us li {
+  margin: 5px 0;
+}
+
+.follow-us li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Social icons style (optional icons can be added here) */
+.social-icons li {
+  display: inline;
+  margin-right: 10px;
+}
+
+/* Subscribe section */
+.subscribe input[type="email"] {
+  padding: 10px;
+  width: 80%;
+  border-radius: 5px;
+  border: none;
   margin-bottom: 10px;
 }
 
-column ul {
-  list-style: none;
-  padding: 0;
+.subscribe-btn {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  background-color: #ddd;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+  background-color: black;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9em;
 }
