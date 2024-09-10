@@ -219,7 +219,7 @@ footer {
 .footer-top {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background-color: #013220; /* Black-green color */
+  background-color: #708F03; /* Black-green color */
   padding: 40px;
   gap: 20px;
 }
@@ -255,12 +255,6 @@ footer {
   text-decoration: none;
 }
 
-/* Social icons style (optional icons can be added here) */
-.social-icons li {
-  display: inline;
-  margin-right: 10px;
-}
-
 /* Subscribe section */
 .subscribe input[type="email"] {
   padding: 10px;
@@ -293,4 +287,25 @@ footer {
 .footer-bottom p {
   margin: 0;
   font-size: 0.9em;
+}
+
+/* Social icons styling */
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.social-icons li a {
+  text-decoration: none;
+  color: white; /* Default icon color */
+  font-size: 24px; /* Adjust icon size */
+}
+
+.social-icons li a:hover {
+  color: #ddd; /* Change color on hover */
 }
